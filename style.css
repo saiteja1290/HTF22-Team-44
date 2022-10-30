@@ -7,6 +7,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
 .dropbtn {
   background-color: #290244;
   color: white;
@@ -62,7 +66,8 @@
   background: #290244;
   transition: transform 0.2s ease;
 }
-.yes-button:hover {background-color: #2579ba}
+.yes-button:hover  {box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;background-position: 100%;}
 
 .yes-button:active {
   background-color: #3e8e41;
